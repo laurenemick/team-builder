@@ -8,14 +8,13 @@ export default function Form(props) {
       } = props
 
     return (
-        <form className='form-container' onSubmit={onSubmit}>
+        <form onSubmit={onSubmit} className='form-container'>
             <div className='header'>
                 <h2>Add a Team Member:</h2>
             </div>
             <div className='form-inputs'>
                 <label htmlFor='nameInput'>Name:&nbsp;
                     <input 
-                        id='nameInputs'
                         type='text'
                         name='name'
                         value={values.name}

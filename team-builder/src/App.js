@@ -26,6 +26,7 @@ function App() {
 
   const [formValues, setFormValues] = useState(initialFormValues)
 
+
   const onInputChange = evt => {
     const { name, value } = evt.target
 
@@ -59,7 +60,7 @@ function App() {
       </header>
       <Form
         values={formValues}
-        onInoutChange={onInputChange}
+        onInputChange={onInputChange}
         onSubmit={onSubmit}
       />
       {
